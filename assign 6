@@ -1,0 +1,19 @@
+Java.util.Scanner;
+public class Student_002
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+double array[] = new double[10];
+System.out.print("Please enter 10 numbers: ");
+for(int i=0;i<=9;i++)
+{
+array[i] = input.nextDouble();
+}
+double sum = 0;
+for(int i=0;i<=9;i++)
+{
+sum = sum+array[i];
+}
+double average = (double)sum/10;
+System.out.println("The average of the array is: "+average);
+}
+}
